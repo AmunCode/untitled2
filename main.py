@@ -6,7 +6,6 @@ cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 
-
 camera = True
 while camera:
     success, frame = cap.read()
@@ -19,7 +18,7 @@ while camera:
         print(code.data)
 
     cv2.imshow("test code", frame)
-    cv2.waitKey(1)
+    cv2.waitKey(10)
 
 # for code in decode(img):
 #     # print(code)
